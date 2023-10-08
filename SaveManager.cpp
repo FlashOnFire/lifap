@@ -72,7 +72,7 @@ void SaveManager::load(int saveNumber) {
                 save.setEvents(std::stoi(line.substr(line.find('=') + 1)));
             }
 
-            this->_currentSave = save;
+            _currentSave = save;
         }
     }
 }

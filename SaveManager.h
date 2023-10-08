@@ -6,13 +6,15 @@
 #define SAVE_PATH "saves/"
 
 class SaveManager {
-    public:
-        void save(int saveNumber) const;
-        void load(int saveNumber);
-        void newSave();
+public:
+    void save(int saveNumber) const;
+
+    void load(int saveNumber);
+
+    void newSave();
 
     [[nodiscard]] Save getCurrentSave() const;
 
 private:
-        Save _currentSave;
+    Save _currentSave;
 };

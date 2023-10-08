@@ -16,8 +16,10 @@ private:
     int _secrets = 0;
     int _dialogs = 0;
     int _events = 0;
+
 public:
     Save() = default;
+
     Save(int currentArea, int currentRoom, float health, int bosses, int weapons, int abilities, int doors,
          int cinematics, int chests, int secrets, int dialogs, int events);
 

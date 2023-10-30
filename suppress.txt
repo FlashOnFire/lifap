@@ -1,0 +1,61 @@
+
+{
+   malloc
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:malloc
+   fun:malloc
+   fun:_dl_map_object_deps
+   fun:dl_open_worker_begin
+   fun:_dl_catch_exception
+   fun:dl_open_worker
+   fun:_dl_catch_exception
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_exception
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen_implementation
+   fun:dlopen@@GLIBC_2.34
+}
+
+{
+   malloc
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:malloc
+   obj:/usr/lib/libnvidia-glvkspirv.so.535.113.01
+   obj:/usr/lib/libnvidia-glvkspirv.so.535.113.01
+   obj:/usr/lib/libnvidia-glvkspirv.so.535.113.01
+   obj:/usr/lib/libnvidia-glcore.so.535.113.01
+   obj:/usr/lib/libnvidia-glcore.so.535.113.01
+   obj:/usr/lib/libnvidia-glcore.so.535.113.01
+   obj:/usr/lib/libGLX_nvidia.so.535.113.01
+   obj:/usr/lib/libGLX_nvidia.so.535.113.01
+   obj:/usr/lib/libGLX_nvidia.so.535.113.01
+}
+
+{
+   realloc
+   Memcheck:ReallocZero
+   fun:realloc
+   obj:/usr/lib/libnvidia-glcore.so.535.113.01
+   obj:/usr/lib/libGLX_nvidia.so.535.113.01
+   obj:/usr/lib/libGLX_nvidia.so.535.113.01
+   obj:/usr/lib/libGLX_nvidia.so.535.113.01
+}
+
+{
+   malloc
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:malloc
+   obj:/usr/lib/libnvidia-glvkspirv.so.535.113.01
+   obj:/usr/lib/libnvidia-glvkspirv.so.535.113.01
+   obj:/usr/lib/libnvidia-glcore.so.535.113.01
+   obj:/usr/lib/libnvidia-glcore.so.535.113.01
+   obj:/usr/lib/libnvidia-glcore.so.535.113.01
+   obj:/usr/lib/libGLX_nvidia.so.535.113.01
+   obj:/usr/lib/libGLX_nvidia.so.535.113.01
+   obj:/usr/lib/libGLX_nvidia.so.535.113.01
+}
